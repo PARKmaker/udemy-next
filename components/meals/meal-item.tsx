@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./meal-item.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { MealItem } from "@/components/meals/meals-grid";
+import { TMealItem } from "@/types/MealItem";
 
 export default function MealItem({
   title,
@@ -10,7 +10,7 @@ export default function MealItem({
   image,
   summary,
   creator,
-}: MealItem) {
+}: TMealItem) {
   return (
     <article className={styles.meal}>
       <header>
